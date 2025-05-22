@@ -1,0 +1,17 @@
+{
+    "name": "task_0",
+    "version": "1.0.0",
+    "description": "ALX TypeScript Task 0",
+    "scripts": {
+      "build": "webpack"
+    },
+    "author": "Your Name",
+    "license": "ISC",
+    "devDependencies": {
+      "typescript": "^4.1.3",
+      "ts-loader": "^8.0.12",
+      "webpack": "^4.44.2",
+      "webpack-cli": "^3.3.12"
+    }
+  }
+  
