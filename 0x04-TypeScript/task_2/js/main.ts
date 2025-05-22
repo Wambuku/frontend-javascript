@@ -45,3 +45,23 @@ export function createEmployee(salary: number | string): Director | Teacher {
         return new Director();
     }
 }
+
+
+export function isDirector(employee: Director | Teacher): employee is Director {
+    return (employee as Director).workDirectorTasks !== undefined;
+}
+
+export function executeWork(employee: Director | Teacher): string {
+    return isDirector(employee)
+        ? employee.workDirectorTasks()
+        : employee.workTeacherTasks();
+}
+
+
+export type  Subjects = 'Math' | 'History';
+
+export function teachClass(todayClass: Subjects): string {
+    if (todayClass === 'Math') return 'Teaching Math';
+    if (todayClass === 'History') return 'Teaching History';
+    return '';
+}
