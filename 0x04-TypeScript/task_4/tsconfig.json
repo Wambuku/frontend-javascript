@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "none",
+      "strict": true,
+      "esModuleInterop": true,
+      "rootDir": "./js",
+      "outDir": "./dist"
+    },
+    "include": ["js/**/*"]
+  }
+  
