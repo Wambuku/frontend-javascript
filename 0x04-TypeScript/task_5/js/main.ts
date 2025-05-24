@@ -22,7 +22,6 @@ interface MajorCredits {
     };
   } 
   
-  // Example usage (optional):
   const major1: MajorCredits = { credits: 3, __brand: 'Major' };
   const major2: MajorCredits = { credits: 4, __brand: 'Major' };
   console.log(sumMajorCredits(major1, major2)); 
